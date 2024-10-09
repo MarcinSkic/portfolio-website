@@ -6,8 +6,10 @@ html {
 }
 
 :root {
-  --font-body: roboto, arial, -apple-system, blinkmacsystemfont, "Segoe UI",
-    oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-body: "Inter Variable", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+
   --font-header: "Inter Variable", sans-serif;
   --font-mono: "Fira Mono", monospace;
   --color-bg-0: #94a3b8;
