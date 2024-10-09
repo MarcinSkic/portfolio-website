@@ -1,6 +1,6 @@
 ---
 title: Intro to time tracking
-description: "Overview of how to use metadata like: category, project, tags, etc. to describe your activities in productive and convenient way"
+description: "Overview of how to use metadata such as category, project, tags, etc., to describe your activities in productive and convenient way"
 date: "2024-10-07"
 tags:
   - productivity
@@ -9,13 +9,13 @@ tags:
 published: true
 ---
 
-In 2022, I discovered the concept of time tracking and was immediately sold on it's promise of a tool that objectively measures your productivity and forces your mind to be intentional with actions taken in the moment. In this post, I will assume you are already convinced by the benefits time tracking brings; otherwise, you may listen to [Cortex podcast](https://www.relay.fm/cortex/44) to learn more (that's how I came across this idea).
+In 2022, I discovered the concept of time tracking and was immediately sold on its promise of a tool that objectively measures your productivity and forces your mind to be intentional with actions taken in the moment. In this post, I will assume you are already convinced by the benefits time tracking brings; otherwise, you may listen to [Cortex podcast](https://www.relay.fm/cortex/44) to learn more (that's how I came across this idea).
 
 I should clarify that I don't use automatic time tracking (that detects what site you visit or program you launch). I gave it a try and it produces data that isn't useful. It also contradicts the utility of time tracking as a tool in mindful decision-making.
 
 ## Beginner mistakes
 
-After 2 months of getting used to time tracking, I decided to record my whole day: work, relaxation, and everything in between (except for night sleep). However, when doing that, it's common to overdo:
+After 2 months of getting used to time tracking, I decided to record my whole day: work, relaxation, and everything in between (except for night sleep). When doing that though, it's quite common to overdo:
 You can't log every little detail, otherwise time tracking will become more important than the action itself, distracting you from things that matter. Moreover, it will become an unbearable chore that will discourage you from keeping this habit. Still, as a first instinct you want to do it, because if you are the kind of person that gets interested in time tracking, then you want to record all the information you can. As with everything in life you have to strike a balance, data must be detailed enough to allow for the generation of useful reports but also easy to track and structured in a way that prevents confusion (e.g. same action under different labels).
 
 Another aspect that makes time tracking difficult is the amount of options that most tools give you when it comes to how to describe your actions. Including but not limited to team, category, project, tags, description, and status (billable/non-billable). During almost 3 years of my time tracking I changed my _taxonomy_ (classification structure) many times, ironing out the details. **That's why I would like to share here my conclusions so you can avoid redesigning your system multiple times**
@@ -34,7 +34,7 @@ Okay, so, before discussing taxonomy let's set some ground rules:
 
 ## Taxonomy
 
-Ground rules set, here I will go into the details of setting up a classification system. However, before that, I have to explain how I use my time tracker so you can better understand my design decisions. My goal is to write 2 to 4 letters into the `description` box and select one of the suggested entries. Fortunately, this search takes into account all fields: `project`, `category`, `description`, and even `tags`. Yet, there is a limit of available suggestions (for Clockify it's last 250 unique entries from the previous 60 days, which for me translates roughly to a week of data). After taking all of this into account, entries should repeat as much as possible but also be distinguishable from each other for a quick search.
+With ground rules set, let's dive into the details of setting up a classification system. Before that though, I have to explain how I use my time tracker so you can better understand my design decisions. My goal is to write 2 to 4 letters into the `description` box and select one of the suggested entries. Fortunately, this search takes into account all fields: `project`, `category`, `description`, and even `tags`. Yet, there is a limit of available suggestions (for Clockify it's last 250 unique entries from the previous 60 days, which for me translates roughly to a week of data). After taking all of this into account, entries should repeat as much as possible but also be distinguishable from each other for a quick search.
 
 ![Example of autocomplete](/images/intro-to-time-tracking/autocomplete.png)
 
@@ -105,7 +105,7 @@ project: must-do
 description: cleaning
 ```
 
-are the same thing! However, this happens rarely if this entry is used often as autocomplete fills it for us. Otherwise one possible solution is to create a `project` with that `description`
+are the same thing! This rarely happens when entry occurs often, as autocomplete fills it for us. Otherwise, one possible solution is to create a `project` with that `description`
 
 ```yaml
 project: chores
@@ -172,7 +172,7 @@ category: work
 project: company Y
 ```
 
-However, for many entries `project` and `description` are sufficient to describe all the details you need. In such cases you have 2 options, leave the `project` with no `category` or create a `category` with the same name:
+For many entries `project` and `description` are sufficient to describe the necessary details. In such cases you have 2 options, leave the `project` with no `category` or create a `category` with the same name:
 
 ```yaml
 category: programming
