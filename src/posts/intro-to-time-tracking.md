@@ -18,7 +18,7 @@ I should clarify that I don't use automatic time tracking (that detects what sit
 After 2 months of getting used to time tracking, I decided to record my whole day: work, relaxation, and everything in between (except for night sleep). However, when doing that, it's common to overdo:
 You can't log every little detail, otherwise time tracking will become more important than the action itself, distracting you from things that matter. Moreover, it will become an unbearable chore that will discourage you from keeping this habit. Still, as a first instinct you want to do it, because if you are the kind of person that gets interested in time tracking, then you want to record all the information you can. As with everything in life you have to strike a balance, data must be detailed enough to allow for the generation of useful reports but also easy to track and structured in a way that prevents confusion (e.g. same action under different labels).
 
-Another aspect that makes time tracking difficult at the beginning is the amount of options that most tools give you when it comes to how to describe your actions. Including but not limited to team, category, project, tags, description, and status (billable/non-billable). During almost 3 years of my time tracking I changed my _taxonomy_ (classification structure) many times, ironing out the details. **That's why I would like to share here my conclusions so you can avoid redesigning your system multiple times**
+Another aspect that makes time tracking difficult is the amount of options that most tools give you when it comes to how to describe your actions. Including but not limited to team, category, project, tags, description, and status (billable/non-billable). During almost 3 years of my time tracking I changed my _taxonomy_ (classification structure) many times, ironing out the details. **That's why I would like to share here my conclusions so you can avoid redesigning your system multiple times**
 
 ## Basics
 
@@ -30,7 +30,7 @@ Okay, so, before discussing taxonomy let's set some ground rules:
 
 - **Pick a color scheme:** An intuitive color system aids in interpreting charts by making you associate certain emotions with different colors. If you lack an idea where to start, my system uses a hue scale to assign meaning to entries: colder colors mean desired activities (work, programming, hobbies, etc.) while warmer mean suboptimal ones (gaming, browsing the internet, etc.). <br> <br> ![Example dashboard with my system](/images/intro-to-time-tracking/colors.png)
 
-- **Start small:** at the beginning track only your most productive time: work, side projects, etc. For many people that will be all they need to see positive change that time tracking can bring to their lives. And if you decide to record more, the system described in this article is designed in a way that supports such needs.
+- **Start small:** at the beginning track only your most productive time: work, side projects, etc. For many people that will be all they need to see positive change that time tracking can bring to their lives. And if you decide to record more, the system described in this article is designed in a way that makes such transition smooth.
 
 ## Taxonomy
 
@@ -40,7 +40,7 @@ Ground rules set, here I will go into the details of setting up a classification
 
 ### Project
 
-Depending on workspace settings, `project` can also be called `location` or `job`. This is the most basic attribute for your entries, it sets the context of your actions and determines their **<span style="color: #ef4444">c</span><span style="color: #f97316">o</span><span style="color: #facc15">l</span><span style="color: #22c55e">o</span><span style="color: #22d3ee">r</span>**. Use only `project` at the beginning, optionally `description` if you require more details. Skip `categories` and `tags` for now—`categories` can easily be added later, and `tags` can be challenging to use correctly.
+Depending on workspace settings, `project` can also be called `location` or `job`. This is the most basic attribute for your entries, it sets the context of your actions and determines their **<span style="color: #ef4444">c</span><span style="color: #f97316">o</span><span style="color: #facc15">l</span><span style="color: #22c55e">o</span><span style="color: #22d3ee">r</span>**. Use only `project` at the beginning, optionally `description` if you require more details. Skip `categories` and `tags` for now—`categories` can easily be added later, and `tags` are challenging to use correctly.
 
 #### Example usage
 
@@ -136,7 +136,7 @@ project: job-hunting
 description: companyX:solving test
 ```
 
-It's okay if used rarely for short-lived events but I would discourage using it often, it's better to have predefined `projects` to choose from than to try to remember these, especially if there is big time gap between usage of specific groups, making it easier to introduce mistakes.
+It's okay if used rarely for short-lived events but I would discourage using it often, it's better to have predefined `projects` to choose from than to try to remember these, especially if there is big time gap between usage of specific groups which increases the probability of making a mistake.
 
 </li>
 </ul>
@@ -172,7 +172,7 @@ category: work
 project: company Y
 ```
 
-However, for many entries `project` and `description` are sufficient to describe all the details that you need. In such cases you have 2 options, leave the `project` with no `category` or create a `category` with the same name:
+However, for many entries `project` and `description` are sufficient to describe all the details you need. In such cases you have 2 options, leave the `project` with no `category` or create a `category` with the same name:
 
 ```yaml
 category: programming
@@ -180,7 +180,7 @@ project: programming
 description: portfolio page
 ```
 
-I would suggest picking the second solution as in the future you may feel the need to move `description` to `project` and input more data in its place:
+I would suggest picking the second solution as in the future you may feel the need to move `description` to `project` and put more data in its place:
 
 ```yaml
 category: programming
@@ -216,7 +216,7 @@ description: pizza
 
 ### Tags
 
-These are in my opinion the most difficult to use, they allow for great granularity and can express almost any idea but quickly become annoying to add to your entries. Same as `description` they can be shared between activities from different `categories` and `projects` but have one unique feature: one entry can have multiple `tags` simultaneously. Yet, this freedom makes them challenging to use, it's common to forget or add them by accident. By accident? Yes, unfortunately Clockify's autocomplete ignores `tags` so different entries are merged as one:
+These are in my opinion the most difficult to use, they allow for great granularity and can express almost any idea but quickly become annoying to add to your entries. Same as `description` they can be shared between activities from different `categories` and `projects` but have one unique feature: one entry can have multiple `tags` simultaneously. Yet, this freedom makes them challenging to use, it's common to forget or add them by accident. Add by accident? Yes, unfortunately Clockify's autocomplete ignores `tags` so different entries are merged as one:
 
 ![How tags break autocomplete](/images/intro-to-time-tracking/autocomplete-tags.png)
 
@@ -300,6 +300,6 @@ When designing such a system it is useful to think with one SOLID programming ru
 
 > software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification
 
-In the time tracking context, I interpret it in the following way: entries should be open for adding more detail, without the need to edit existing entries to match the new standard. This is what you can hopefully achieve when using design system described in this article. However, at the very beginning don't dwell on everything I've written, experiment and see what works for you.
+In the time tracking context, I interpret it in the following way: entries should be open for adding more detail, without the need to edit existing entries to match the new standard. This is what you can hopefully achieve when using the design system described in this article. Just don't dwell on this idea at the beginning, this is the time where you should experiment and see what works for you, breaking stuff is part of the process at that point. Whether you are a beginner or an experienced time tracker I hope this post helped you in some way and wish you good luck in this endeavor!
 
 If you have questions or wish to share your opinion, feel free to contact me. I would love to know your insights.
