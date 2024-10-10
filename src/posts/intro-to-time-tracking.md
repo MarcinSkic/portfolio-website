@@ -122,7 +122,7 @@ project: chores
 
 <li>
 
-**Grouping with description:** Depending on your circumstances you may be tempted to do something like this:
+**Grouping with `description`:** Depending on your circumstances you may be tempted to do something like this:
 
 ```yaml
 category: work
@@ -137,6 +137,26 @@ description: companyX:solving test
 ```
 
 It's okay if used rarely for short-lived events, but I would discourage using it often. It's better to have predefined `projects` to choose from than trying to remember words used to define groups (companyX in this example). Especially if there is considerable time gap between usage of them, which increases the probability of making a mistake as autocomplete won't help.
+
+</li>
+
+<li>
+
+**Using the same `description` in different `projects`:** I like to do this:
+
+```yaml
+category: work
+project: companyX
+description: management
+```
+
+```yaml
+category: programming
+project: harmonify
+description: management
+```
+
+but there is a loss in convenience. Now, when you type `mana` into Clockify's input, you will get at least 2 options, and they are **not** sorted by which one was used most recently. Because of that, every time you enter this entry, you have to pause for a second to decide which suggestion to pick. And trust me, such microdecisions can wear you off quickly, so you may want to avoid this pattern.
 
 </li>
 </ul>
